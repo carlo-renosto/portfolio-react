@@ -1,12 +1,14 @@
 import Dashboard from "../../components/Dashboard/Dashboard.tsx";
-import Name from "../../components/Name/Name.tsx";
+import Header from "../../components/Header/Header.tsx";
 
 const Home = () => {
     return (
-        <Dashboard>
-            <div>Home</div>
-            <Name name="Carlo Renosto"/>
-        </Dashboard>
+        <div>
+            <Header />
+            <Dashboard>
+                <div>Home</div>
+            </Dashboard>
+        </div>
     )
 }
 
