@@ -1,3 +1,4 @@
+import AboutMe from "../../components/Body/AboutMe/AboutMe.tsx";
 import Dashboard from "../../components/Dashboard/Dashboard.tsx";
 import Header from "../../components/Header/Header.tsx";
 
@@ -6,7 +7,7 @@ const Home = () => {
         <div>
             <Header />
             <Dashboard>
-                <div>Home</div>
+                <AboutMe />
             </Dashboard>
         </div>
     )

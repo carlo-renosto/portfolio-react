@@ -1,5 +1,6 @@
 
 import type { ReactNode } from "react";
+import styles from './Dashboard.module.scss';
 
 type DashboardProps = {
   children: ReactNode;
@@ -7,7 +8,7 @@ type DashboardProps = {
 
 function Dashboard({ children }: DashboardProps) {
   return (
-    <div>
+    <div className={styles.dashboard}>
       <div>{children}</div>
     </div>
   );
