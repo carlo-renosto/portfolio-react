@@ -1,0 +1,26 @@
+
+.aboutskill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+}
+
+.skillleft {
+    flex: 0 0 10%;
+}
+
+.skillcontent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillpicture {
+    width: 100%;
+    padding: 1rem;
+}
