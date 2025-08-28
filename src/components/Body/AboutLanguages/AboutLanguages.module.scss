@@ -1,0 +1,26 @@
+.about {
+    width: 100%;
+    padding: 1rem;
+}
+
+.aboutheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.hr {
+    margin-top: 10px;
+    border: 1px solid darkslateblue;
+}
+
+.aboutlanguages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+}

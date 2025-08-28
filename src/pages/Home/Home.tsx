@@ -1,3 +1,4 @@
+import AboutLanguages from "../../components/Body/AboutLanguages/AboutLanguages.tsx";
 import AboutMe from "../../components/Body/AboutMe/AboutMe.tsx";
 import AboutSkills from "../../components/Body/AboutSkills/AboutSkills.tsx";
 import Dashboard from "../../components/Dashboard/Dashboard.tsx";
@@ -10,6 +11,7 @@ const Home = () => {
             <Dashboard>
                 <AboutMe />
                 <AboutSkills />
+                <AboutLanguages />
             </Dashboard>
         </div>
     )
