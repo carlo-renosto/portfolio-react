@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import styles from './AboutFrameworks.module.scss';
-import ButtonShow from '../../ButtonShow/ButtonShow';
+import ButtonShow from '../../../ButtonShow/ButtonShow';
 import AboutLanguage from '../AboutLanguages/AboutLanguage/AboutLanguage';
 
 function AboutFrameworks() {

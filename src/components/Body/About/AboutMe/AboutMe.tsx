@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import ButtonShow from '../../ButtonShow/ButtonShow';
+import ButtonShow from '../../../ButtonShow/ButtonShow';
 import styles from './AboutMe.module.scss';
 
 function AboutMe() {

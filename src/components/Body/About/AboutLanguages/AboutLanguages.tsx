@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import styles from './AboutLanguages.module.scss';
-import ButtonShow from '../../ButtonShow/ButtonShow';
+import ButtonShow from '../../../ButtonShow/ButtonShow';
 import AboutLanguage from './AboutLanguage/AboutLanguage';
 
 function AboutLanguages() {

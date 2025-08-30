@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import ButtonShow from '../../ButtonShow/ButtonShow';
+import ButtonShow from '../../../ButtonShow/ButtonShow';
 import styles from './AboutSkills.module.scss';
 import AboutSkill from './AboutSkill/AboutSkill';
 
