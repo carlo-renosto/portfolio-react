@@ -1,0 +1,20 @@
+
+.footer {
+    width: 100%;
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+
+.link {
+    padding: 1rem;
+    font-size: large;
+    text-decoration: none;
+}
