@@ -1,0 +1,40 @@
+
+.experienceaddress {
+    color: inherit;
+}
+
+.experienceproject {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border: 2px solid darkslateblue;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.experienceheader {
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.experiencestar {
+    position: absolute;
+    right: 1rem;
+}
+
+.experiencestarcount {
+    position: absolute;
+    right: 0.4rem;
+}
+
+.experiencelanguage {
+    width: fit-content;
+    padding: 0.2rem;
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+}
+
+.experiencedesc {
+    margin-top: 1rem;
+}
