@@ -1,0 +1,40 @@
+
+.educationcourse {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid darkslateblue;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.educationheader {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.educationproject {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.educationcertification {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.educationplace {
+    display: flex;
+    flex-direction: row;
+}
+
+.educationdate {
+    display: flex;
+    flex-direction: row;
+}
+
+.educationdescription {
+    margin-top: 0.5rem;
+}
