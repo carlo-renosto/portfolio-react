@@ -1,9 +1,14 @@
 
-import display from './Phone.module.scss'
+import styles from './Phone.module.scss'
 
 function Phone() {
     return (
-        <p className={display.phone}>+541165255373</p>
+        <div className={styles.phone}>
+            <span className="material-icons">
+                phone_android
+            </span>
+            <p className={styles.phone}>+541165255373</p>
+        </div>   
     )
 }
 

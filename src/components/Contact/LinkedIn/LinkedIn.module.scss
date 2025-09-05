@@ -1,4 +1,12 @@
 
 .linkedin {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.linkedinicon {
+    width: 24px;
+    margin-right: 0.3rem;
 }
