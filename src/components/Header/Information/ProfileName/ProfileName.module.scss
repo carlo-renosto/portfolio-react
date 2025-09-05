@@ -2,3 +2,21 @@
 .profilename {
     margin-left: 10px;
 }
+
+@media (max-width: 480px) {
+    .profilename {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 767px) {
+    .profilename {
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px) {
+    .profilename {
+        font-size: larger;
+    }
+}

@@ -1,40 +1,19 @@
 
 import styles from './Header.module.scss';
-import { useState } from "react";
 import Information from "./Information/Information";
-import HeaderDropdown from './HeaderDropdown/HeaderDropdown';
-import ContactList from '../ContactList/ContactList';
-import Contact from '../Contact/Contact';
-import Phone from '../Contact/Phone/Phone';
-import Mail from '../Contact/Mail/Mail';
-import LinkedIn from '../Contact/LinkedIn/LinkedIn';
-import Resume from '../Contact/Resume/Resume';
 
 function Header() {
-    const [isOpen, setIsOpen] = useState(false);
     return (
         <header className={styles.header}>
             <Information />
-            <HeaderDropdown 
-                isOpen={isOpen}
-                onOpen={() => setIsOpen(!isOpen)}
-            />
-            {isOpen && (
-                <div>
-                    <ContactList>
-                        <Contact>
-                            <Phone />
-                        </Contact>
-                        <Contact>
-                            <Mail />
-                        </Contact>
-                        <Contact>
-                            <LinkedIn />
-                        </Contact>
-                    </ContactList>
-                    <Resume />
-                </div>
-            )}
+            <div className={styles.logos}>
+                <a className={styles.linkedin} href="https://www.linkedin.com/in/carlo-renosto-17a589283/" target="_blank" rel="noopener noreferrer">
+                    <img className={styles.linkedinicon} src="src/assets/contact/linkedin-white.svg" alt="LinkedIn"/>
+                </a>
+                <a className={styles.github} href="https://github.com/carlo-renosto" target="_blank" rel="noopener noreferrer">
+                    <img className={styles.githubicon} src="src/assets/contact/github_white.svg" alt="GitHub"/>
+                </a>
+            </div>
         </header>
     )
 }

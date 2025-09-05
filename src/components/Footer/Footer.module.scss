@@ -18,3 +18,15 @@
     font-size: large;
     text-decoration: none;
 }
+
+@media (max-width: 480px) {
+    .link {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 767px) {
+    .link {
+        font-size: small;
+    }
+}
