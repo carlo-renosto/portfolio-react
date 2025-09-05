@@ -26,3 +26,13 @@
     margin-top: 0.3rem;
     margin-right: 1rem;
 }
+
+@media (min-width: 768px) {
+    .linkedinicon {
+        width: 36px;
+    }
+
+    .githubicon {
+        width: 36px;
+    }
+}
