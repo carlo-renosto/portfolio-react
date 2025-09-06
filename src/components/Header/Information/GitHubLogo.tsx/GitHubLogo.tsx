@@ -1,7 +1,7 @@
 
 import styles from './GitHubLogo.module.scss';
-import githubWhiteLogo from '../../../assets/contact/githubwhite.svg';
-import githubBlackLogo from '../../../assets/contact/githubblack.svg';
+import githubWhiteLogo from '../../../../assets/contact/githubwhite.svg';
+import githubBlackLogo from '../../../../assets/contact/githubblack.svg';
 
 type GitHubLogoProps = {
     imgTheme: String;

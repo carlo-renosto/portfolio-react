@@ -1,7 +1,7 @@
 
 import styles from './LinkedInLogo.module.scss';
-import linkedinWhiteLogo from '../../../assets/contact/linkedinwhite.svg';
-import linkedinBlackLogo from '../../../assets/contact/linkedinblack.svg';
+import linkedinWhiteLogo from '../../../../assets/contact/linkedinwhite.svg';
+import linkedinBlackLogo from '../../../../assets/contact/linkedinblack.svg';
 
 type LinkedInLogoProps = {
     imgTheme: String;
