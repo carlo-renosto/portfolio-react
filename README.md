@@ -18,7 +18,7 @@ Portfolio web personal creado con React + Vite, usando TypeScript como lenguaje.
 git clone https://github.com/carlo-renosto/portfolio-react.git
 ```
 
-2. Navegar hasta la carpeta del repositorio
+2. Navegar hasta la carpeta del repositorio:
 
 ```bash
 cd portfolio-react
@@ -30,13 +30,13 @@ cd portfolio-react
 npm install
 ```
 
-4. Ejecutar en modo desarrollo
+4. Ejecutar en modo desarrollo:
 
 ```bash
 npm run dev
 ```
 
-5. Compilar para producción (opcional)
+5. Compilar para producción (opcional):
 
 ```bash
 npm run build
