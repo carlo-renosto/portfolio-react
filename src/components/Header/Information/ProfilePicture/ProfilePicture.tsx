@@ -1,10 +1,10 @@
 
 import styles from './ProfilePicture.module.scss'
-import pfpPlaceholder from '../../../../assets/pfp/pfp-placeholder.png';
+import pfp from '../../../../assets/pfp/pfp.jpg'
 
 function ProfilePicture() {
     return (
-        <img className={styles.profilepicture} src={pfpPlaceholder} alt="Perfil"/>
+        <img className={styles.profilepicture} src={pfp} alt="Perfil"/>
     )
 }
 
