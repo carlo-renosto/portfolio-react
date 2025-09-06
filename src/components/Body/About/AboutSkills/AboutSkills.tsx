@@ -39,7 +39,7 @@ function AboutSkills() {
                 {isOpen && (
                     <div> 
                         <AboutSkill
-                            imgSrc={"./src/assets/skills/frontend" + theme + ".webp"}
+                            imgSrc={"./assets/skills/frontend" + theme + ".webp"}
                             skillTitle="Frontend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -57,7 +57,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./src/assets/skills/backend" + theme + ".webp"}
+                            imgSrc={"./assets/skills/backend" + theme + ".webp"}
                             skillTitle="Backend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -71,7 +71,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./src/assets/skills/desktop" + theme + ".webp"}
+                            imgSrc={"./assets/skills/desktop" + theme + ".webp"}
                             skillTitle="Desktop Development"
                         >
                             <ul className={styles.aboutul}>
@@ -85,7 +85,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./src/assets/skills/mobile" + theme + ".webp"}
+                            imgSrc={"./assets/skills/mobile" + theme + ".webp"}
                             skillTitle="Mobile Development"
                         >
                             <ul className={styles.aboutul}>
