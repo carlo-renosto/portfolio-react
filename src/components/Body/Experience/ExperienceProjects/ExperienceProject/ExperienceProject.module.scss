@@ -3,10 +3,16 @@
     color: inherit;
 }
 
+.experienceaddress:hover {
+    .experiencelanguage {
+        color: var(--text-color);
+    }
+}
+
 .experienceproject {
     margin-top: 1rem;
     padding-left: 1rem;
-    border: 2px solid darkslateblue;
+    border: 2px solid #646cff;
     border-radius: 10px;
     text-align: left;
 }
@@ -30,8 +36,8 @@
 .experiencelanguage {
     width: fit-content;
     padding: 0.2rem;
-    background-color: darkslateblue;
-    border: 1px solid darkslateblue;
+    background-color: #646cff;
+    border: 1px solid #646cff;
     border-radius: 5px;
 }
 

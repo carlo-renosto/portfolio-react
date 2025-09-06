@@ -1,11 +1,12 @@
 
 .resume {
+    width: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .resumeicon {
-    color: white;
+    color: inherit;
     margin-right: 0.3rem;
 }

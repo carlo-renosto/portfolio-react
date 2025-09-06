@@ -1,17 +1,16 @@
 
-import styles from './LinkedIn.module.scss';
+import styles from './LinkedInLogo.module.scss';
 
-type LinkedInProps = {
+type LinkedInLogoProps = {
     imgTheme: String;
 }
 
-function LinkedIn({ imgTheme }: LinkedInProps) {
+function LinkedInLogo({ imgTheme }: LinkedInLogoProps) {
     return (
         <a className={styles.linkedin} href="https://www.linkedin.com/in/carlo-renosto-17a589283/" target="_blank" rel="noopener noreferrer">
             <img className={styles.linkedinicon} src={"src/assets/contact/linkedin" + imgTheme + ".svg"} alt="LinkedIn"/>
-            <p>LinkedIn</p>
         </a>
     )
 }
 
-export default LinkedIn;
+export default LinkedInLogo;

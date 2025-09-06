@@ -1,11 +1,29 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ButtonShow from '../../../ButtonShow/ButtonShow';
 import styles from './AboutSkills.module.scss';
 import AboutSkill from './AboutSkill/AboutSkill';
 
 function AboutSkills() {
     const [isOpen, setIsOpen] = useState(true);
+    var htmlTheme = document.documentElement.getAttribute("data-theme");
+    htmlTheme = htmlTheme === "dark" ? "white" : "black";
+    const [theme, setTheme] = useState(htmlTheme);
+
+    useEffect(() => {
+        const observer = new MutationObserver(() => {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            setTheme(currentTheme === "dark" ? "white" : "black");
+        });
+
+        observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-theme"]
+    });
+
+        return () => observer.disconnect();
+    }, []);
+    
     return (
         <div className={styles.about}>
             <div className={styles.aboutheader}>
@@ -21,7 +39,7 @@ function AboutSkills() {
                 {isOpen && (
                     <div> 
                         <AboutSkill
-                            imgSrc="src/assets/frontendwhite.webp"
+                            imgSrc={"src/assets/skills/frontend" + theme + ".webp"}
                             skillTitle="Frontend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -39,7 +57,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc="src/assets/backendwhite.webp"
+                            imgSrc={"src/assets/skills/backend" + theme + ".webp"}
                             skillTitle="Backend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -53,7 +71,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc="src/assets/desktopwhite.webp"
+                            imgSrc={"src/assets/skills/desktop" + theme + ".webp"}
                             skillTitle="Desktop Development"
                         >
                             <ul className={styles.aboutul}>
@@ -67,7 +85,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc="src/assets/mobilewhite.webp"
+                            imgSrc={"src/assets/skills/mobile" + theme + ".webp"}
                             skillTitle="Mobile Development"
                         >
                             <ul className={styles.aboutul}>

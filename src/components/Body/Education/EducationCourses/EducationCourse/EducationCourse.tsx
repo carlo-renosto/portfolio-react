@@ -12,7 +12,6 @@ type EducationCourseProps = {
 }
 
 function EducationCourse({ title, place, from, to, description, project, certification }: EducationCourseProps) {
-    console.log(project)
     return (
         <div className={styles.educationcourse}>
             <div className={styles.educationheader}>

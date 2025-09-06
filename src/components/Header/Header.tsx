@@ -1,18 +1,37 @@
 
+import { useEffect, useState } from 'react';
 import styles from './Header.module.scss';
+import GitHubLogo from './Information/GitHubLogo.tsx/GitHubLogo';
 import Information from "./Information/Information";
+import LinkedInLogo from './Information/LinkedInLogo.tsx/LinkedInLogo';
+import ThemeSwitch from './ThemeSwitch/ThemeSwitch';
 
 function Header() {
+    var htmlTheme = document.documentElement.getAttribute("data-theme");
+    htmlTheme = htmlTheme === "dark" ? "white" : "black";
+    const [theme, setTheme] = useState(htmlTheme);
+    
+    useEffect(() => {
+        const observer = new MutationObserver(() => {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            setTheme(currentTheme === "dark" ? "white" : "black");
+        });
+    
+        observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-theme"]
+    });
+    
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <header className={styles.header}>
             <Information />
             <div className={styles.logos}>
-                <a className={styles.linkedin} href="https://www.linkedin.com/in/carlo-renosto-17a589283/" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.linkedinicon} src="src/assets/contact/linkedin-white.svg" alt="LinkedIn"/>
-                </a>
-                <a className={styles.github} href="https://github.com/carlo-renosto" target="_blank" rel="noopener noreferrer">
-                    <img className={styles.githubicon} src="src/assets/contact/github_white.svg" alt="GitHub"/>
-                </a>
+                <LinkedInLogo imgTheme={theme}/>
+                <GitHubLogo imgTheme={theme} />
+                <ThemeSwitch />
             </div>
         </header>
     )

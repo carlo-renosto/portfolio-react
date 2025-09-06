@@ -2,6 +2,7 @@
 .phone {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-bottom: 0.5rem;
 }
