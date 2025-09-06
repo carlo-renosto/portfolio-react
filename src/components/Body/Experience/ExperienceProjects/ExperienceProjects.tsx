@@ -7,6 +7,7 @@ import ExperienceProject from './ExperienceProject/ExperienceProject';
 
 function ExperienceProjects() {
     const [isOpen, setIsOpen] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
     const [repos, setRepos] = useState<Repo[]>([]);
 
     useEffect(() => {
@@ -14,6 +15,7 @@ function ExperienceProjects() {
             .then((res) => res.json())
             .then((data) => {
                 setRepos(data);
+                setIsLoading(false);
             })
             .catch((err) => {
                 console.error(err);
@@ -32,6 +34,10 @@ function ExperienceProjects() {
             </div>
             <hr className={styles.hr}/>
             <div className={styles.experienceprojects}>
+                {isLoading && (
+                    <p>Loading...</p>
+                )}
+
                 {isOpen && (
                     <div>
                         {repos.map((repo) => (
