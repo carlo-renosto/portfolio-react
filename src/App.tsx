@@ -7,7 +7,7 @@ import Contact from './pages/Contact/Contact'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-react">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/experience" element={<Experience />}/>
