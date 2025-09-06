@@ -3,6 +3,14 @@ import { useState } from 'react';
 import styles from './AboutLanguages.module.scss';
 import ButtonShow from '../../../ButtonShow/ButtonShow';
 import AboutLanguage from './AboutLanguage/AboutLanguage';
+import typescriptLogo from '../../../../assets/languages/typescript.svg';
+import javascriptLogo from '../../../../assets/languages/javascript.svg';
+import javaLogo from '../../../../assets/languages/java.svg';
+import csharpLogo from '../../../../assets/languages/csharp.svg';
+import vbnetLogo from '../../../../assets/languages/vbnet.svg';
+import cLogo from '../../../../assets/languages/c.svg';
+import cppLogo from '../../../../assets/languages/c++.svg';
+import pythonLogo from '../../../../assets/languages/python.svg';
 
 function AboutLanguages() {
     const [isOpen, setIsOpen] = useState(true);
@@ -19,14 +27,14 @@ function AboutLanguages() {
             <hr className={styles.hr}/>
             {isOpen && (
                 <div className={styles.aboutlanguages}>
-                    <AboutLanguage imgSrc="./assets/languages/typescript.svg" imgAlt="TypeScript"/>
-                    <AboutLanguage imgSrc="./assets/languages/javascript.svg" imgAlt="JavaScript"/>
-                    <AboutLanguage imgSrc="./assets/languages/java.svg" imgAlt="Java"/>
-                    <AboutLanguage imgSrc="./assets/languages/csharp.svg" imgAlt="C#"/>
-                    <AboutLanguage imgSrc="./assets/languages/vbnet.svg" imgAlt="VB.NET"/>
-                    <AboutLanguage imgSrc="./assets/languages/c.svg" imgAlt="C"/>
-                    <AboutLanguage imgSrc="./assets/languages/c++.svg" imgAlt="C++"/>
-                    <AboutLanguage imgSrc="./assets/languages/python.svg" imgAlt="Python"/>
+                    <AboutLanguage imgSrc={typescriptLogo} imgAlt="TypeScript"/>
+                    <AboutLanguage imgSrc={javascriptLogo} imgAlt="JavaScript"/>
+                    <AboutLanguage imgSrc={javaLogo} imgAlt="Java"/>
+                    <AboutLanguage imgSrc={csharpLogo} imgAlt="C#"/>
+                    <AboutLanguage imgSrc={vbnetLogo} imgAlt="VB.NET"/>
+                    <AboutLanguage imgSrc={cLogo} imgAlt="C"/>
+                    <AboutLanguage imgSrc={cppLogo} imgAlt="C++"/>
+                    <AboutLanguage imgSrc={pythonLogo} imgAlt="Python"/>
                 </div>
             )}
         </div>

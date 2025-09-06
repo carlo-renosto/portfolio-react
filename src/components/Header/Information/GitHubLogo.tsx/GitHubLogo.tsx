@@ -1,5 +1,7 @@
 
 import styles from './GitHubLogo.module.scss';
+import githubWhiteLogo from '../../../assets/contact/githubwhite.svg';
+import githubBlackLogo from '../../../assets/contact/githubblack.svg';
 
 type GitHubLogoProps = {
     imgTheme: String;
@@ -8,7 +10,7 @@ type GitHubLogoProps = {
 function GitHubLogo({ imgTheme }: GitHubLogoProps) {
     return (
         <a className={styles.github} href="https://github.com/carlo-renosto" target="_blank" rel="noopener noreferrer">
-            <img className={styles.githubicon} src={"./assets/contact/github" + imgTheme + ".svg"} alt="GitHub"/>
+            <img className={styles.githubicon} src={imgTheme === "white" ? githubWhiteLogo : githubBlackLogo} alt="GitHub"/>
         </a>
     )
 }

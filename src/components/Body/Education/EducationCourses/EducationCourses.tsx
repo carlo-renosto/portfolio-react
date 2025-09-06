@@ -3,6 +3,8 @@ import { useState } from 'react';
 import styles from './EducationCourses.module.scss';
 import ButtonShow from '../../../ButtonShow/ButtonShow';
 import EducationCourse from './EducationCourse/EducationCourse';
+import reactCertificate from '../../../../assets/certifications/certificado_reactjs.webp';
+import backendCertificate from '../../../../assets/certifications/certificado_programacionbackend.webp';
 
 function EducationCourses() {
     const [isOpen, setIsOpen] = useState(true);
@@ -41,7 +43,7 @@ function EducationCourses() {
                             to="Febrero 2024"
                             description="Formación en fundamentos del desarrollo web frontend y las SPA (single-page applications), utilizando el framework React.js."
                             project="https://github.com/carlo-renosto/ecommerce-react"
-                            certification="./assets/certifications/certificado_reactjs.webp"
+                            certification={reactCertificate}
                         />
                         <EducationCourse 
                             title="Desarrollo Web Backend"
@@ -50,7 +52,7 @@ function EducationCourses() {
                             to="Enero 2024"
                             description="Formación en fundamentos del desarrollo web backend, utilizando frameworks como Express.js."
                             project="https://github.com/carlo-renosto/ecommerce-backend"
-                            certification="./assets/certifications/certificado_programacionbackend.webp"
+                            certification={backendCertificate}
                        />
                         <EducationCourse 
                             title="Argentina Programa 'Yo Programo'"

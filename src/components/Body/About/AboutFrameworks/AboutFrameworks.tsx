@@ -3,6 +3,11 @@ import { useState } from 'react';
 import styles from './AboutFrameworks.module.scss';
 import ButtonShow from '../../../ButtonShow/ButtonShow';
 import AboutLanguage from '../AboutLanguages/AboutLanguage/AboutLanguage';
+import reactLogo from '../../../../assets/frameworks/react.svg';
+import angularLogo from '../../../../assets/frameworks/angular.svg';
+import expressLogo from '../../../../assets/frameworks/express.svg';
+import springLogo from '../../../../assets/frameworks/spring.svg';
+import netLogo from '../../../../assets/frameworks/net.svg';
 
 function AboutFrameworks() {
     const [isOpen, setIsOpen] = useState(true);
@@ -19,11 +24,11 @@ function AboutFrameworks() {
             <hr className={styles.hr}/>
             {isOpen && (
                 <div className={styles.aboutframeworks}>
-                    <AboutLanguage imgSrc="./assets/frameworks/react.svg" imgAlt="ReactJS"/>
-                    <AboutLanguage imgSrc="./assets/frameworks/angular.svg" imgAlt="AngularJS"/>
-                    <AboutLanguage imgSrc="./assets/frameworks/express.svg" imgAlt="ExpressJS"/>
-                    <AboutLanguage imgSrc="./assets/frameworks/spring.svg" imgAlt="Spring"/>
-                    <AboutLanguage imgSrc="./assets/frameworks/net.svg" imgAlt=".NET Framework"/>
+                    <AboutLanguage imgSrc={reactLogo} imgAlt="ReactJS"/>
+                    <AboutLanguage imgSrc={angularLogo} imgAlt="AngularJS"/>
+                    <AboutLanguage imgSrc={expressLogo} imgAlt="ExpressJS"/>
+                    <AboutLanguage imgSrc={springLogo} imgAlt="Spring"/>
+                    <AboutLanguage imgSrc={netLogo} imgAlt=".NET Framework"/>
                 </div>
             )}
         </div>

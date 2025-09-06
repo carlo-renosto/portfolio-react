@@ -3,6 +3,14 @@ import { useEffect, useState } from 'react';
 import ButtonShow from '../../../ButtonShow/ButtonShow';
 import styles from './AboutSkills.module.scss';
 import AboutSkill from './AboutSkill/AboutSkill';
+import frontendWhiteLogo from '../../../../assets/skills/frontendwhite.webp';
+import frontendBlackLogo from '../../../../assets/skills/frontendblack.webp';
+import backendWhiteLogo from '../../../../assets/skills/backendwhite.webp';
+import backendBlackLogo from '../../../../assets/skills/backendblack.webp';
+import desktopWhiteLogo from '../../../../assets/skills/desktopwhite.webp';
+import desktopBlackLogo from '../../../../assets/skills/desktopblack.webp';
+import mobileWhiteLogo from '../../../../assets/skills/mobilewhite.webp';
+import mobileBlackLogo from '../../../../assets/skills/mobileblack.webp';
 
 function AboutSkills() {
     const [isOpen, setIsOpen] = useState(true);
@@ -39,7 +47,7 @@ function AboutSkills() {
                 {isOpen && (
                     <div> 
                         <AboutSkill
-                            imgSrc={"./assets/skills/frontend" + theme + ".webp"}
+                            imgSrc={theme === "white" ? frontendWhiteLogo : frontendBlackLogo}
                             skillTitle="Frontend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -57,7 +65,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./assets/skills/backend" + theme + ".webp"}
+                            imgSrc={theme === "white" ? backendWhiteLogo : backendBlackLogo}
                             skillTitle="Backend Development"
                         >
                             <ul className={styles.aboutul}>
@@ -71,7 +79,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./assets/skills/desktop" + theme + ".webp"}
+                            imgSrc={theme === "white" ? desktopWhiteLogo : desktopBlackLogo}
                             skillTitle="Desktop Development"
                         >
                             <ul className={styles.aboutul}>
@@ -85,7 +93,7 @@ function AboutSkills() {
                             </ul>
                         </AboutSkill>
                         <AboutSkill 
-                            imgSrc={"./assets/skills/mobile" + theme + ".webp"}
+                            imgSrc={theme === "white" ? mobileWhiteLogo : mobileBlackLogo}
                             skillTitle="Mobile Development"
                         >
                             <ul className={styles.aboutul}>
