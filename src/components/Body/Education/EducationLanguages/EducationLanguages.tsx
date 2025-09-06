@@ -28,7 +28,7 @@ function EducationLanguages() {
                          <EducationLanguage 
                             language="Inglés"
                             academy="Laboratorio de Idiomas (UBA)"
-                            certification="/certifications/certificado_inglesb2.pdf"
+                            certification="./certifications/certificado_inglesb2.pdf"
                             proficiency="Upper Intermediate (B2)"
                         />
                     </div>
