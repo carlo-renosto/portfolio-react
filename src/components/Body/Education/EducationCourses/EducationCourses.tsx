@@ -41,7 +41,7 @@ function EducationCourses() {
                             to="Febrero 2024"
                             description="Formación en fundamentos del desarrollo web frontend y las SPA (single-page applications), utilizando el framework React.js."
                             project="https://github.com/carlo-renosto/ecommerce-react"
-                            certification="/src/assets/certifications/certificado_reactjs.webp"
+                            certification="./src/assets/certifications/certificado_reactjs.webp"
                         />
                         <EducationCourse 
                             title="Desarrollo Web Backend"
@@ -50,7 +50,7 @@ function EducationCourses() {
                             to="Enero 2024"
                             description="Formación en fundamentos del desarrollo web backend, utilizando frameworks como Express.js."
                             project="https://github.com/carlo-renosto/ecommerce-backend"
-                            certification="/src/assets/certifications/certificado_programacionbackend.webp"
+                            certification="./src/assets/certifications/certificado_programacionbackend.webp"
                        />
                         <EducationCourse 
                             title="Argentina Programa 'Yo Programo'"
@@ -58,7 +58,7 @@ function EducationCourses() {
                             from="Octubre 2022"
                             to="Mayo 2023"
                             description="Formación en fundamentos del desarrollo web backend, utilizando frameworks como Express.js."
-                            certification="/certifications/certificado_yoprogramo.pdf"
+                            certification="./certifications/certificado_yoprogramo.pdf"
                         />
                         <EducationCourse 
                             title="Argentina Programa 'Sé Programar'"
@@ -66,7 +66,7 @@ function EducationCourses() {
                             from="Julio 2022"
                             to="Agosto 2022"
                             description=" Formación en fundamentos de la programación imperativa, estructuras de datos y lenguajes JavaScript y Ruby."
-                            certification="/certifications/certificado_seprogramar.pdf"
+                            certification="./certifications/certificado_seprogramar.pdf"
                         />
                     </div>
                 )}

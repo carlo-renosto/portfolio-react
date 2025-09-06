@@ -19,11 +19,11 @@ function AboutFrameworks() {
             <hr className={styles.hr}/>
             {isOpen && (
                 <div className={styles.aboutframeworks}>
-                    <AboutLanguage imgSrc="src/assets/frameworks/react.svg" imgAlt="ReactJS"/>
-                    <AboutLanguage imgSrc="src/assets/frameworks/angular.svg" imgAlt="AngularJS"/>
-                    <AboutLanguage imgSrc="src/assets/frameworks/express.svg" imgAlt="ExpressJS"/>
-                    <AboutLanguage imgSrc="src/assets/frameworks/spring.svg" imgAlt="Spring"/>
-                    <AboutLanguage imgSrc="src/assets/frameworks/net.svg" imgAlt=".NET Framework"/>
+                    <AboutLanguage imgSrc="./src/assets/frameworks/react.svg" imgAlt="ReactJS"/>
+                    <AboutLanguage imgSrc="./src/assets/frameworks/angular.svg" imgAlt="AngularJS"/>
+                    <AboutLanguage imgSrc="./src/assets/frameworks/express.svg" imgAlt="ExpressJS"/>
+                    <AboutLanguage imgSrc="./src/assets/frameworks/spring.svg" imgAlt="Spring"/>
+                    <AboutLanguage imgSrc="./src/assets/frameworks/net.svg" imgAlt=".NET Framework"/>
                 </div>
             )}
         </div>

@@ -3,7 +3,7 @@ import styles from './ProfilePicture.module.scss'
 
 function ProfilePicture() {
     return (
-        <img className={styles.profilepicture} src="src\assets\pfp-placeholder.png" alt="Perfil"/>
+        <img className={styles.profilepicture} src="./src\assets\pfp-placeholder.png" alt="Perfil"/>
     )
 }
 
