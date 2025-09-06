@@ -6,12 +6,14 @@ import type { Repo } from '../../../../models/interfaces/Repo';
 import ExperienceProject from './ExperienceProject/ExperienceProject';
 
 function ExperienceProjects() {
+    const API_URL = import.meta.env.DEV ? "/users/carlo-renosto/repos" : "https://api.github.com/users/carlo-renosto/repos";
+
     const [isOpen, setIsOpen] = useState(true);
     const [isLoading, setIsLoading] = useState(true);
     const [repos, setRepos] = useState<Repo[]>([]);
 
     useEffect(() => {
-        fetch("/users/carlo-renosto/repos")
+        fetch(API_URL)
             .then((res) => res.json())
             .then((data) => {
                 setRepos(data);
