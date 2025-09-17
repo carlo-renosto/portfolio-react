@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.scss'
 import Home from './pages/Home/Home'
 import Experience from './pages/Experience/Experience'
@@ -8,7 +8,7 @@ import Page404 from './pages/Page404/PageNotFound'
 
 function App() {
   return (
-    <BrowserRouter basename="/portfolio-react">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/experience" element={<Experience />}/>
@@ -16,7 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />}/>
         <Route path="*" element={<Page404 />}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
