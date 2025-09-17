@@ -5,7 +5,7 @@ import ButtonShow from '../../../ButtonShow/ButtonShow';
 import AboutLanguage from '../AboutLanguages/AboutLanguage/AboutLanguage';
 import reactLogo from '../../../../assets/frameworks/react.svg';
 import angularLogo from '../../../../assets/frameworks/angular.svg';
-import expressLogo from '../../../../assets/frameworks/express.svg';
+import expressLogo from '../../../../assets/frameworks/express.webp';
 import springLogo from '../../../../assets/frameworks/spring.svg';
 import netLogo from '../../../../assets/frameworks/net.svg';
 
